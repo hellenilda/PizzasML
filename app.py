@@ -19,4 +19,4 @@ diametro = st.number_input("Digite o tamanho do diâmetro da pizza: ")
 
 if diametro:
     preco_previsto = modelo.predict([[diametro]])[0][0]
-    st.write(f"A pizza com diâmetro de {diametro} custa R$ {preco_previsto:.2f}")
+    st.write(f"A pizza com diâmetro de {diametro:.0f} cm custa R$ {preco_previsto:.2f}")
