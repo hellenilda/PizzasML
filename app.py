@@ -10,6 +10,8 @@ modelo = LinearRegression()
 x = df[["diametro"]]
 y = df[["preco"]]
 
+modelo.fit(x, y)
+
 st.title("Prevendo o valor de uma pizza")
 st.divider()
 
